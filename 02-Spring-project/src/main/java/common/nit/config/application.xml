@@ -1,0 +1,77 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/integration
+           https://www.springframework.org/schema/integration/spring-integration.xsd">
+           
+           
+           <bean name = "ub" class = "com.nit.bean.UserBean">
+           <property name="username" value = "Naresh"></property>
+           <property name="password" value = "Naresh"></property>
+           
+           <property name="courses">
+           <array>
+           <value> Core Java</value>
+          <value>Advanced Java</value>
+           <value>Spring Java</value>
+           <value>Core Java</value>
+           </array>
+           
+           
+           </property>
+           </bean>
+           
+           <bean id = "cd" class = "com.nit.bean.CollectionBean">
+           
+           <property name="cities">
+           <list>
+           <value>Hyderabad</value>
+           <value>Mumbai</value>
+           <value>Delhi</value>
+           </list>
+           
+           </property>
+            <property name="employees">
+            <map>
+            <entry key = "1">
+            <value>Prashant</value>
+            
+            </entry>
+           <entry key = "2">
+            <value>Sneha</value>
+            
+            </entry>
+             <entry key = "3">
+            <value>Abhi</value>
+            
+            </entry>
+            </map>
+            
+            </property>
+            
+             <property name="names">
+             <set>
+             
+             <value>Prashant</value>
+             <value>Anil</value>
+             <value>Sneha</value>
+             <value>Sneha</value>
+             </set>
+             
+             </property>
+             
+             <property name="properties">
+             <props>
+             <prop key="database">MySql</prop>
+             <prop key="jdbcUrl">jdbc:mysql://localhost:3306/mysqljdbc</prop>
+             <prop key="username">root</prop>
+             <prop key="password">Kashibai@123</prop>
+             
+             </props>
+             
+             </property>
+           
+           </bean>
+           </beans>
